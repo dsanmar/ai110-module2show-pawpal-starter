@@ -30,6 +30,7 @@ Your final app should:
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+streamlit run app.py
 ```
 
 ### Suggested workflow
@@ -81,3 +82,7 @@ python -m pytest
 | `test_get_todays_schedule_excludes_past_dates` | Yesterday's tasks excluded; today's tasks included |
 
 **Confidence: ★★★★☆** — Core scheduling logic (sort, conflict detect, recurrence) is fully covered. Edge cases like midnight date boundaries or malformed time strings are not tested.
+
+
+## Demo
+![PawPal App](demo_pic.png)
